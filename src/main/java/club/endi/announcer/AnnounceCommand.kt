@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender
 
 class AnnounceCommand : CommandExecutor {
     override fun onCommand(sender: CommandSender, p1: Command, p2: String, args: Array<out String>?): Boolean {
-        var message = "§e§lIlmoitus: §r§6"
+        var message = "§e§lAnnouncement: §r§6"
 
         if (args != null) {
             for (arg in args) {
@@ -19,6 +19,7 @@ class AnnounceCommand : CommandExecutor {
 
         for (player in Bukkit.getOnlinePlayers()) {
             player.sendMessage(message)
+            player.playSound(player.location, org.bukkit.Sound.BLOCK_NOTE_BLOCK_PLING, 1.0f, 1.0f)
         }
         return true
     }

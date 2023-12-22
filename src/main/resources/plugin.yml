@@ -5,7 +5,7 @@ api-version: '1.20'
 
 commands:
   announce:
-    description: tee ilmoitus
+    description: Make An Announcement
     usage: /<command> <text>
-    permission: end.announce
-    permission-message: Sinulla ei ole oikeutta tehdä tuota!
+    permission: simpleannouncer.announce
+    permission-message: §cYou do not have the permission to do that!
