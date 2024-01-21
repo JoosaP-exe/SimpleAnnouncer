@@ -1,8 +1,6 @@
 package club.endi.announcer
 
-import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
-import net.kyori.adventure.sound.Sound
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
@@ -12,7 +10,7 @@ class AnnounceCommand : CommandExecutor {
         var message = "§e§lAnnouncement: §r§6"
 
         if (args != null) {
-            for (arg in args) {
+            for (arg in args[0]) {
                 message += arg+" "
             }
         }

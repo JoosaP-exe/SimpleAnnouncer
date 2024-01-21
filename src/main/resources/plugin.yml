@@ -7,5 +7,5 @@ commands:
   announce:
     description: Make An Announcement
     usage: /<command> <text>
-    permission: simpleannouncer.announce
+    permission: announcer.announce
     permission-message: §cYou do not have the permission to do that!
