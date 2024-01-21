@@ -4,4 +4,4 @@
 - My First Plugin <3 :)
 
 ## ✨ Usage:
-/announce <message>
+/announce (message)
