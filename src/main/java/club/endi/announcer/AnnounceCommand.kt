@@ -11,7 +11,7 @@ class AnnounceCommand : CommandExecutor {
 
         if (args != null) {
             for (arg in args[0]) {
-                message += arg+" "
+                message += arg+""
             }
         }
 
